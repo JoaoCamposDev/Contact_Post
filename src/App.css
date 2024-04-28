@@ -1,0 +1,13 @@
+.page-container {
+    opacity: 1; /* Define a opacidade inicial */
+    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave para a opacidade */
+  }
+  
+  .page-fade-in {
+    opacity: 1; /* Opacidade total para a página */
+  }
+  
+  .page-fade-out {
+    opacity: 0; /* Opacidade zero para a página */
+  }
+  
