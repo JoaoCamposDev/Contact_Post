@@ -1,7 +1,7 @@
 import React from 'react';
 import './redefinir.css';
 
-function Redefinir({goToSignIn, goToNovaSenha}){
+function Redefinir({goToSignIn, goToVerificarSenha}){
     return(
             <div className='fundoRedefinir'>
 
@@ -13,7 +13,7 @@ function Redefinir({goToSignIn, goToNovaSenha}){
                         <input className='inputEmail' type='text'></input>
                     </div>
                     
-                    <button className='btnEnviar_link' onClick={goToNovaSenha} >Enviar Link</button>
+                    <button className='btnEnviar_link' onClick={goToVerificarSenha} >Enviar</button>
 
                     <div className='voltarLogin' onClick={goToSignIn} >Voltar a tela de login</div>
 

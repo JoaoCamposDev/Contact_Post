@@ -4,6 +4,7 @@ import Cadastrar from './Pages/cadastro/cadastro';
 import Verificar from './Pages/verificacao/verificacao';
 import Redefinir from './Pages/redefinir/redefinir';
 import NovaSenha from './Pages/nova_senha/nova_senha';
+import VerificarSenha from './Pages/verificacao_senha/verificacao_senha';
 import Contatos from './Pages/contatos/Contato';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus, faList, faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -29,9 +30,11 @@ function App() {
       case 'verificacao':
         return <Verificar goToSignIn={() => changePage('login')} />;
       case 'redefinir':
-        return <Redefinir goToSignIn={() => changePage('login')} goToNovaSenha={() => changePage('nova_senha')} />;
+        return <Redefinir goToSignIn={() => changePage('login')} goToVerificarSenha={() => changePage('verificacao_senha')} />;
       case 'nova_senha':
         return <NovaSenha goToSignIn={() => changePage('login')} />;
+      case 'verificacao_senha':
+        return <VerificarSenha goToNovaSenha={() => changePage('nova_senha')} />;
       default:
         return null;
     }
